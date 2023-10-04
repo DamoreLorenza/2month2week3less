@@ -1,0 +1,46 @@
+$spazioOccupato : 700px;
+
+@mixin animazioniBottoni{
+
+    transform: scale(1.5,1.5);
+
+}
+
+    @mixin allButtons ($backgroundColor){
+
+    padding: 1em;
+    margin: 2em;
+    background-color: $backgroundColor;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    margin-right: 3em;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+
+    }
+   
+    button {
+        @include allButtons(#ff8700);
+        @include animazioniMain()
+    }
+
+
+    button:first-of-type {
+        @include allButtons(#0e6cff);
+        @include animazioniMain()
+    }
+
+    button:last-of-type {
+        @include allButtons(#4caf50);
+        @include animazioniMain()
+    }
+
+button:hover{
+
+@include animazioniBottoni();
+cursor: pointer;
+
+}

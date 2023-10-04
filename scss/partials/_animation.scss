@@ -1,0 +1,22 @@
+@mixin animazioniMain {
+
+    animation-name: transAnim;
+    animation-duration: 4s;
+
+
+}
+
+@keyframes transAnim {
+
+0%{
+    display: none;
+    transform: translate(-100px, -100px);
+}
+
+50% {
+    display: block;
+}
+
+
+
+}
